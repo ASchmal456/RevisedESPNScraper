@@ -19,9 +19,11 @@ jobs:
           python-version: '3.x' # install the python version needed
         
       - name: Install dependencies
+        working-directory: ./app
         run: pip install -r requirements.txt
           
       - name: execute py script # run sj-gobierno.py to get the latest data
+        working-directory: ./app
         run: python espnexporter.py
       
       - name: commit files
