@@ -1,10 +1,10 @@
 name: ScriptRunner
 
-on:
-  schedule:
-    - cron: '0 0 * * MON'
+#on:
+ # schedule:
+  #  - cron: '0 0 * * MON'
 
-#on: workflow_dispatch
+on: workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
